@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ジャンケンゲーム</title>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        #hundred-game-stats {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ジャンケンゲーム</h1>
+    
+    <div>
+        <!-- グーの画像 -->
+        <img id="rock" src="ぐ.png" alt="グー">
+        <!-- チョキの画像 -->
+        <img id="scissors" src="ちょ.png" alt="チョキ">
+        <!-- パーの画像 -->
+        <img id="paper" src="ぱ.png" alt="パー">
+    </div>
+    
+    <h2>結果</h2>
+    <p>あなたの手: <span id="player-move"></span></p>
+    <p>コンピュータの手: <span id="computer-move"></span></p>
+    <p>結果: <span id="result"></span></p>
+
+    <h2>スコア</h2>
+    <p>勝ち: <span id="win-count">0</span></p>
+    <p>負け: <span id="lose-count">0</span></p>
+    <p>引き分け: <span id="draw-count">0</span></p>
+    <p>試合回数: <span id="games-count">0</span></p>
+
+    <!-- 100試合ごとの統計 -->
+    <div id="hundred-game-stats">
+        <h3>100試合ごとの統計</h3>
+        <!-- 統計データがここに表示されます -->
+    </div>
+
+    <!-- リセットボタン -->
+    <button id="reset">リセット</button>
+
+    <!-- JavaScriptを読み込む -->
+    <script src="script.js"></script>
+</body>
+</html>
